@@ -5,7 +5,6 @@ This is a movie search application built using React, where users can search for
 
 ## Features
 - Search for movies by title
-- View movie details like description, release year, and poster
 - Display a list of popular and trending movies
 - Responsive design for different screen sizes
 
