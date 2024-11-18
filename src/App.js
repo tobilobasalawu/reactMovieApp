@@ -1,5 +1,7 @@
 import React from 'react'
 import { useEffect } from 'react';
+import './App.css';
+import SearchIcon from './search.svg'
 
 //Api key: c99e8c72
 
@@ -20,8 +22,12 @@ const App = () => {
   }, []);
 
   return(
-    <div>
-      <h1>Movie App</h1>
+    <div className='app'>
+      <h1>StreamBase</h1>
+
+      <div className='search'>
+        <input placeholder='Search Movies' />
+      </div>
     </div>
   );
 }
