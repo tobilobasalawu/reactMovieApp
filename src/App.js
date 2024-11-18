@@ -1,30 +1,15 @@
 import './App.css';
-
-const Person = (props) => {
-  return(
-    <>
-      <h1>Name: {props.firstName}</h1>
-      <h2>Last Name: {props.lastName}</h2>
-      <h2>Age: {props.age}</h2>
-    </>
-  )
-}
+import {useState} from 'react';
 
 const App = () => {
 
+  const [counter, setCounter] = useState(0); //hook
+
   return (
-    <div className="App">
-      <Person 
-        firstName="Tobi" 
-        lastName="Salawu" 
-        age={30}
-      />
-      <Person 
-        firstName="shf" 
-        lastName="Idk"
-        age={30}
-      />
-      <Person firstName="shs" lastName="Jaydah" age={30}/>
+    <div className='App'>
+      <button onClick={() => setCounter((prevCount) => prevCount - 1 )}>-</button>
+      <h1>{counter}</h1>
+      <button onClick={() => setCounter((prevCount) => prevCount + 1)}>+</button>
     </div>
   );
 }
