@@ -1,7 +1,7 @@
 
 # Simple React Movie App
 
-This is a movie search application built using React, where users can search for movies, view their details, and browse through the latest movie releases.
+This is a movie search application built using React, where users can search for movies and browse through the latest movie releases.
 
 ## Features
 - Search for movies by title
